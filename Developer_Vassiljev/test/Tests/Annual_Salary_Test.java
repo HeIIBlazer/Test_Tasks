@@ -20,7 +20,7 @@ public class Annual_Salary_Test {
     
         
     @Test
-    public void hour_rate_test1() {
+    public void Annual_Salary_test1() {
         DeveloperLogic obj = new DeveloperLogic();
         
         Developer developer = new Developer();
@@ -29,50 +29,50 @@ public class Annual_Salary_Test {
         developer.setSpecialty("IT spec-Ops");
         developer.setSalary(85249);
         
-        int thisDevHourSalary = obj.calculateHourRate(developer);
-        assertEquals(8000, thisDevHourSalary, 0.01);
+        int thisDevAnnualSalary = obj.calculateAnnualSalary(developer);
+        assertEquals(8000, thisDevAnnualSalary, 0.01);
     }
     
     @Test
-    public void hour_rate_test2() {
+    public void Annual_Salary_test2() {
         DeveloperLogic obj = new DeveloperLogic();
         
         Developer developer = new Developer();
         developer.setFirstName("Aleksander");
         developer.setLastName("Ipolitov");
-        developer.setSpecialty("Marketing Manager");
-        developer.setSalary(3000);
+        developer.setSpecialty("Marketing");
+        developer.setSalary(387878);
         
-        int thisDevHourSalary = obj.calculateHourRate(developer);
-        assertEquals(18, thisDevHourSalary, 0.01);
+        int thisDevAnnualSalary = obj.calculateAnnualSalary(developer);
+        assertEquals(1887, thisDevAnnualSalary, 0.01);
     }
     
     @Test
-    public void hour_rate_test3() {
+    public void Annual_Salary_test3() {
         DeveloperLogic obj = new DeveloperLogic();
         
         Developer developer = new Developer();
-        developer.setFirstName("Marquise");
-        developer.setLastName("De Valera");
-        developer.setSpecialty("Big Boss");
-        developer.setSalary(-05555);
+        developer.setFirstName("darker");
+        developer.setLastName("mararna");
+        developer.setSpecialty("Big ");
+        developer.setSalary(-343355);
         
-        int thisDevHourSalary = obj.calculateHourRate(developer);
-        assertEquals(18, thisDevHourSalary, 0.01);
+        int thisDevAnnualSalary = obj.calculateAnnualSalary(developer);
+        assertEquals(18, thisDevAnnualSalary, 0.01);
     }
     
     @Test
-    public void hour_rate_test4() {
+    public void Annual_Salary_test4() {
         DeveloperLogic obj = new DeveloperLogic();
         
         Developer developer = new Developer();
-        developer.setFirstName("BOMB");
-        developer.setLastName("Karamba");
-        developer.setSpecialty("Sanim Danim");
-        developer.setSalary(8000);
+        developer.setFirstName("San");
+        developer.setLastName("Laran");
+        developer.setSpecialty("Sanim larama");
+        developer.setSalary(8549);
         
-        int thisDevHourSalary = obj.calculateHourRate(developer);
-        assertEquals(18.40, thisDevHourSalary, 0.01);
+        int thisDevAnnualSalary = obj.calculateAnnualSalary(developer);
+        assertEquals(18.40, thisDevAnnualSalary, 0.01);
     }
     
 }

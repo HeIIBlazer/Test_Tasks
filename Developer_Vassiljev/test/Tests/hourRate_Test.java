@@ -54,7 +54,7 @@ public class hourRate_Test {
         developer.setFirstName("Marquise");
         developer.setLastName("De Valera");
         developer.setSpecialty("Big Boss");
-        developer.setSalary(-05555);
+        developer.setSalary(-5555);
         
         int thisDevHourSalary = obj.calculateHourRate(developer);
         assertEquals(18, thisDevHourSalary, 0.01);
